@@ -7,13 +7,9 @@ class Fixnum
     bi_array = bi_score.split("")
     allergy = []
     allergen = ["eggs", "peanuts","shellfish", "strawberries", "tomatoes", "chocolate","pollen", "cats"]
-    counter = 0
-      bi_array.each() do |array|
-        if array.eql?("1")
-          allergy.push(allergen.at(counter))
-          counter = counter.+(1)
-        else
-          counter = counter.+(1)
+      bi_array.each_index() do |index|
+        if bi_array[index].==("1")
+          allergy.push(allergen.at(index))
         end
       end
     end
