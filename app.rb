@@ -1,6 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
-require('./lib/allergies')
+require('./lib/allergies.rb')
 
 get('/') do
   erb(:index)

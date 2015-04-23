@@ -6,7 +6,7 @@ class Fixnum
     bi_score = self.to_s(2).reverse()
     bi_array = bi_score.split("")
     allergy = []
-    allergen = ["eggs", "peanuts","shellfish", "strawberries", "tomatoes", "chocolate","pollen", "cats"]
+    allergen = ["<li>eggs</li>", "<li>peanuts</li>","<li>shellfish</li>", "strawberries", "tomatoes", "chocolate","pollen", "cats"]
       bi_array.each_index() do |index|
         if bi_array[index].==("1")
           allergy.push(allergen.at(index))
